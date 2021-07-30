@@ -1,11 +1,13 @@
-import demo from './demo'
+import React from 'react';
+import ReactDOM from 'react-dom';
+ 
+import App from './App';
+ 
+const title = 'React with Webpack and Babel and hot-react plugin';
+ 
+ReactDOM.render(
+  <App title={title} />,
+  document.getElementById('app')
+);
 
-let count = 0;
-document.getElementById('count_value').innerHTML = count;
-
-document.getElementById('counter').addEventListener('click', ()=>{
-    document.getElementById('count_value').innerHTML = count;
-    count++;
-})
-
-console.log('Hello, Welcome to my project');
+module.hot.accept();

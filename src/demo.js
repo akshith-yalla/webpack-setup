@@ -1,1 +1,1 @@
-console.log('Demo Javascript')
+console.log('Demo Javascript');
