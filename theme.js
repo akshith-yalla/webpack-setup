@@ -1,8 +1,8 @@
-import { makeStyles, responsiveFontSizes } from "@material-ui/core/styles";
+import { createTheme, responsiveFontSizes } from "@material-ui/core/styles";
 
 import { grey, cyan, orange } from "@material-ui/core/colors";
 
-const defaultTheme = makeStyles();
+const defaultTheme = createTheme();
 
 const baseStyles = makeStyles({
   container: {
